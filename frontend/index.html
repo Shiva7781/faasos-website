@@ -18,7 +18,6 @@
 	<link rel="stylesheet" href="./styles/landing_page.css" />
 	<link rel="stylesheet" href="./styles/footer.css" />
 
-	<script type="module" defer src="./scripts/landing_page.js"></script>
 	<!-- login section -->
 	<style>
 		#lscontainer {
@@ -204,7 +203,7 @@
 		<div class="section-1-main">
 			<div class="section-1-left">
 				<div>
-					<img src="./assets/landing_page/bike.png" alt="" />
+					<img src="./assets/bike.png" alt="" />
 					<div>
 						<h4>Real-time Temperature</h4>
 						<span>Tracking of the kitchen and delivery staff</span>
@@ -212,14 +211,14 @@
 				</div>
 
 				<div>
-					<img src="./assets/landing_page/stop.png" alt="" />
+					<img src="./assets/stop.png" alt="" />
 					<div>
 						<h4>Contactless Delivery</h4>
 					</div>
 				</div>
 
 				<div>
-					<img src="./assets/landing_page/face.png" alt="" />
+					<img src="./assets/face.png" alt="" />
 					<div>
 						<h4>Regular health</h4>
 						<span>check-ups for the staff members</span>
@@ -305,5 +304,11 @@
 </body>
 
 </html>
+
+<script type="module">
+	import footer from './HomePage/componant/footer.js';
+
+  document.querySelector('#footer').innerHTML = footer();
+</script>
 
 <script src="./scripts/login-signup.js"> </script>

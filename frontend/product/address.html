@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Address</title>
+    <style>
+        #address {
+            display: flex;
+            width: 80%;
+            align-items: center;
+            justify-content: center;
+            /* border: 1px solid red; */
+        }
+
+        #left p {
+            margin-top: -3%;
+        }
+
+        #address>#left {
+            margin-top: -1%;
+            /* border: 1px solid red*/
+        }
+
+        #address>#right {
+            margin-top: 1%;
+            margin-left: 10%;
+            /* border: 1px solid red; */
+        }
+
+        #address input {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 6%;
+        }
+
+        #address select {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 6%;
+        }
+
+        #Done {
+            background-color: orange;
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="address">
+        <div id="left">
+            <p>First Name</p>
+            <p>Last name</p>
+            <p>Email</p>
+            <p>Contact number</p>
+            <p>Address</p>
+            <p>Landmark</p>
+            <p>State</p>
+            <p>ZipCode</p>
+            <p>Country</p>
+        </div>
+
+        <div id="right">
+            <form>
+                <input id="Fname" type="text" placeholder="Enter First name" />
+                <input id="Lname" type="text" placeholder="Enter last name" />
+                <input id="mail" type="text" placeholder="xyz@example.com" />
+                <input id="mobile" type="number" placeholder="Enter mobile number" />
+                <input id="add" type="text" placeholder="Addresss line" />
+                <input id="land" type="text" placeholder="Landmark" />
+
+                <select name="" id="state">
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Delhi"></option>
+                    <option value="U.P."></option>
+                </select>
+
+                <input id="code" type="number" placeholder="ZipCode" />
+
+                <select name="" id="country">
+                    <option value="India">India</option>
+                </select>
+                <input id="Done" type="submit" value="DONE" />
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+    document.querySelector("form").addEventListener("submit", formSubmit);
+
+    var userStack = JSON.parse(localStorage.getItem("UserAdd")) || [];
+
+    function formSubmit(event) {
+        event.preventDefault();
+
+        var Fname = document.getElementById("Fname").value;
+        var Lname = document.getElementById("Lname").value;
+        var mail = document.getElementById("mail").value;
+        var mobile = document.getElementById("mobile").value;
+        var add = document.getElementById("add").value;
+        var land = document.getElementById("land").value;
+        var state = document.getElementById("state").value;
+        var code = document.getElementById("code").value;
+        var country = document.getElementById("country").value;
+
+        var userData = {
+            name1: Fname,
+            name2: Lname,
+            mail1: mail,
+            mobile1: mobile,
+            add1: add,
+            land1: land,
+            state1: state,
+            code1: code,
+            country1: country,
+        };
+
+        userStack.push(userData);
+
+        localStorage.setItem("UserAdd", JSON.stringify(userStack));
+        alert("Submitted Successfully");
+        window.location.href = "delivery.html";
+    }
+</script>

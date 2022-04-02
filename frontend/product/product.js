@@ -1,14 +1,14 @@
 
 
-var data = JSON.parse(localStorage.getItem("clicked_Image"))
-console.log('displayData:', displayData)
+var data = JSON.parse(localStorage.getItem("clicked_Image"));
+console.log('displayData:', displayData);
 // console.log('data:', data)
-displayData(data)
+displayData(data);
 // console.log('data:', data)
 
 
 function displayData(item) {
-    top_left
+    top_left;
     var top_left = document.createElement("h4");
     // top_left.innerHTML = item.food_name;
     top_left.textContent = item.food_name;

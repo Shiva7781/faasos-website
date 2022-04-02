@@ -132,7 +132,7 @@ function checkUserData() {
 }
 
 function goBackHomePage() {
-    window.location.href = "./HomePage/index1.html"
+    window.location.href = "./product.html"
 }
 
 async function verifyOTP(lNumber) {

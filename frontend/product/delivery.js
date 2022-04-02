@@ -1,10 +1,12 @@
-var loginDetails = JSON.parse(localStorage.getItem("lsUserData"));
+// var loginDetails = JSON.parse(localStorage.getItem("lsUserData"));
+var loginDetails = JSON.parse(localStorage.getItem("UserAdd"));
 displayData(loginDetails);
+// console.log('loginDetails:', loginDetails)
+
 var displayData2 = JSON.parse(localStorage.getItem("clicked_Image"));
-// console.log('displayData:', displayData)
-// console.log('data:', data)
 displayData2a(displayData2);
-// console.log('data:', data)
+console.log('displayData2:', displayData2)
+
 
 function displayData(ele) {
     var fix = document.createElement("h3");
@@ -13,10 +15,10 @@ function displayData(ele) {
     let div = document.createElement("div");
 
     var title = document.createElement("h3");
-    title.innerHTML = ele[0].lsName;
+    title.innerHTML = ele[0].name1;
 
     var mobile = document.createElement("h3");
-    mobile.innerHTML = ` | ${ele[0].lsNumber}`;
+    mobile.innerHTML = ` | ${ele[0].mobile1}`;
 
     div.append(title, mobile);
     document.querySelector("#login").append(fix, div);

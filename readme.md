@@ -1,4 +1,4 @@
-Link to blog: https://medium.com/@sushrutin6/faasos-surprises-under-wraps-d598a32e9105
+Link to blog: https://medium.com/@sushrutin6/faasos-surprises-under-wraps-3b9ccfda680e
 # Learn by Cloning : fassos Project Clone
 ## This clone is made with pure HTML,CSS, JavaScript, Expressjs, Mongoose, Node Js.
 

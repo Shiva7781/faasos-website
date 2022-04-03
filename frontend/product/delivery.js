@@ -15,10 +15,10 @@ function displayData(ele) {
     let div = document.createElement("div");
 
     var title = document.createElement("h3");
-    title.innerHTML = ele[0].name1;
+    title.innerHTML = ele[ele.length-1].name1;
 
     var mobile = document.createElement("h3");
-    mobile.innerHTML = ` | ${ele[0].mobile1}`;
+    mobile.innerHTML = ` | ${ele[ele.length-1].mobile1}`;
 
     div.append(title, mobile);
     document.querySelector("#login").append(fix, div);

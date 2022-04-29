@@ -1,4 +1,5 @@
 Link to blog: https://medium.com/@sushrutin6/faasos-surprises-under-wraps-3b9ccfda680e
+### Click on the link to view (https://faasos7781.netlify.app/)
 ![faasosgif](https://user-images.githubusercontent.com/97456472/165891179-c9f250ac-9252-45d6-bcf9-c6bd6a0603c6.gif)
 # Learn by Cloning : fassos Project Clone
 

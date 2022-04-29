@@ -46,8 +46,7 @@ Working in a team helps you in numerous ways, But at the same time, It has many 
 - Some team member are extremily good at some area
 - Project work should be distrubted based on their interest an sensibility
 One caveat of working in a team that i felt was of major concern:
-* **Unequal involvment and Participation of different members**
->"This might delay and drastically affect other component of the website"
+***Unequal involvment and Participation of different members***
 # Starting with the project
 First we have gone through the given website, We tried to understand processes or functionality and structure of the website,then we have the website creation into modules and then based on our teammates interest, work is divided amoung them.
 
